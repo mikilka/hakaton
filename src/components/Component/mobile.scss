@@ -1,0 +1,110 @@
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}
+}
+
+
+& {
+    // background-image: url('../images/Component/PhonePortrait.png');
+    // background-size: 100%;
+    // opacity: 1;
+    // width: px(640);
+    // height: px(1138);
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    a {
+        text-decoration: none;
+        font-family: 'Montserat';
+        color: #fff;
+        font-size: px(22);
+    }
+	.logo {
+		display: block;
+		background-image: url('../images/Component/logo.png');
+		width: px(191);
+		height: px(206);
+		margin: px(215) auto px(270) auto;
+		background-size: 100%;
+	}
+	[name="login"],
+    [name="password"],
+    button {
+        display: block;
+        width: px(554);
+        height: px(96);
+        margin: 0 auto px(25) auto;
+        -webkit-border-radius: px(47);
+        -moz-border-radius: px(47);
+        border-radius: px(47);
+        font-family: 'Montserat';
+        color: #fff;
+        background-color: rgba(0, 0, 0, .3);
+        border: 0;
+        box-sizing: border-box;
+        @include placeholder {
+        font-family: 'Montserat';
+        color: #fff;
+        font-size: px(22);
+        }
+	}
+    [name="login"],
+    [name="password"] {
+        padding-left: px(105);
+        background-image: url('../images/Component/icons.png');
+        background-repeat: no-repeat;
+        background-size: px(40) 160%;
+    }
+    [name="login"] {
+        background-position: px(30) px(30);
+    }
+    [name="password"] {
+        background-position: px(30) px(-85);
+    }
+    button {
+        background-color: #f96332;
+        color: #fff;
+        opacity: 1;
+    }
+    .account, .help {
+        display: inline-block;
+    }
+    .account {
+        margin: px(15) px(145) 0 px(42);
+    }
+    .help {
+        margin: px(15) px(38) 0 px(148);
+    }
+}
+
+&:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	background: url('../images/Component/phone-bg.png');
+	background-size: 100%;
+	width: px(640);
+	height: px(1138);
+	opacity: .3;
+}
+
+&:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -2;
+	background-image: -webkit-linear-gradient(bottom, #000, #ff6a3a);
+	background-image: -moz-linear-gradient(bottom, #000, #ff6a3a);
+	background-image: -o-linear-gradient(bottom, #000, #ff6a3a);
+	background-image: -ms-linear-gradient(bottom, #000, #ff6a3a);
+	background-image: linear-gradient(to top, #000, #ff6a3a);
+	width: px(640);
+	height: px(1138);
+}
