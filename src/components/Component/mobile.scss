@@ -1,9 +1,9 @@
-@mixin placeholder {
-  ::-webkit-input-placeholder {@content}
-  :-moz-placeholder           {@content}
-  ::-moz-placeholder          {@content}
-  :-ms-input-placeholder      {@content}
-}
+
+  ::-webkit-input-placeholder {color: rgba(255, 255, 255, .7)}
+  :-moz-placeholder           {color: rgba(255, 255, 255, .7)}
+  ::-moz-placeholder          {color: rgba(255, 255, 255, .7)}
+  :-ms-input-placeholder      {color: rgba(255, 255, 255, .7)}
+
 
 
 & {
@@ -17,9 +17,9 @@
     // left: 0;
     a {
         text-decoration: none;
-        font-family: 'Montserat';
-        color: #fff;
-        font-size: px(22);
+        font-family: 'Montserrat';
+        color: rgba(255, 255, 255, .5);
+        font-size: px(19);
     }
 	.logo {
 		display: block;
@@ -39,16 +39,12 @@
         -webkit-border-radius: px(47);
         -moz-border-radius: px(47);
         border-radius: px(47);
-        font-family: 'Montserat';
+        font-family: 'Montserrat';
+        font-size: px(21);
         color: #fff;
-        background-color: rgba(0, 0, 0, .3);
+        background-color: rgba(255, 255, 255, .3);
         border: 0;
         box-sizing: border-box;
-        @include placeholder {
-        font-family: 'Montserat';
-        color: #fff;
-        font-size: px(22);
-        }
 	}
     [name="login"],
     [name="password"] {
@@ -58,24 +54,20 @@
         background-size: px(40) 160%;
     }
     [name="login"] {
-        background-position: px(30) px(30);
+        background-position: px(35) px(30);
     }
     [name="password"] {
-        background-position: px(30) px(-85);
+        background-position: px(35) px(-85);
     }
     button {
         background-color: #f96332;
         color: #fff;
         opacity: 1;
     }
-    .account, .help {
-        display: inline-block;
-    }
-    .account {
-        margin: px(15) px(145) 0 px(42);
-    }
-    .help {
-        margin: px(15) px(38) 0 px(148);
+    footer {
+        display: flex;
+        justify-content: space-between;
+        margin: px(43) px(43) 0 px(43);
     }
 }
 

@@ -1,3 +1,66 @@
-& {
+@import 'mobile.scss';
 
+& {
+	// width: 100%;
+	// height: 100%;
+	background-image: url('../images/Component/TabletLandscape.png');
+  background-size: 100%;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  a {
+  	font-size: px(17);
+  }
+	.logo {
+		width: px(170);
+		height: px(180);
+		margin: px(395) auto px(145) auto;
+		background-size: 100%;
+	}
+	[name="login"],
+  [name="password"],
+  button {
+  	font-size: px(20);
+  	width: px(475);
+		height: px(81);
+		-webkit-border-radius: px(40);
+		-moz-border-radius: px(40);
+		border-radius: px(40);
+  }
+	[name="login"],
+  [name="password"] {
+  	margin-bottom: px(30);
+  }
+	button {
+		margin-top: px(60);
+	}
+	[name="login"],
+  [name="password"] {
+    padding-left: px(85);
+    background-size: px(35) 170%;
+  }
+  [name="login"] {
+    background-position: px(29) px(25);
+  }
+  [name="password"] {
+    background-position: px(29) px(-80);
+  }
+  footer {
+  	margin: px(43) px(784) 0 px(784);
+  }
+}
+
+&:before {
+	background: url('../images/Component/desktop-bg.png');
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+}
+
+&:after {
+	width: 100%;
+	height: 100%;
 }
