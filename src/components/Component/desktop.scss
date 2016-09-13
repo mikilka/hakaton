@@ -1,34 +1,28 @@
 @import 'mobile.scss';
 
 & {
-	// width: 100%;
-	// height: 100%;
-	background-image: url('../images/Component/TabletLandscape.png');
-  background-size: 100%;
-  opacity: 1;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+	padding: 0;
+	justify-content: center;
   a {
   	font-size: px(17);
   }
 	.logo {
-		width: px(170);
-		height: px(180);
-		margin: px(395) auto px(145) auto;
+		width: px(120);
+		height: px(140);
+		margin: 0 auto px(50);
+		padding-bottom: 0;
+		box-sizing: border-box;
 		background-size: 100%;
 	}
 	[name="login"],
   [name="password"],
   button {
   	font-size: px(20);
-  	width: px(475);
-		height: px(81);
-		-webkit-border-radius: px(40);
-		-moz-border-radius: px(40);
-		border-radius: px(40);
+  	width: px(470);
+		height: px(80);
+		-webkit-border-radius: px(60);
+		-moz-border-radius: px(60);
+		border-radius: px(60);
   }
 	[name="login"],
   [name="password"] {
@@ -36,6 +30,7 @@
   }
 	button {
 		margin-top: px(60);
+		margin-bottom: px(20);
 	}
 	[name="login"],
   [name="password"] {
@@ -49,13 +44,13 @@
     background-position: px(29) px(-80);
   }
   footer {
-  	margin: px(43) px(784) 0 px(784);
+  	width: px(475);
   }
 }
 
 &:before {
 	background: url('../images/Component/desktop-bg.png');
-	background-size: 100% 100%;
+	background-size: cover;
 	width: 100%;
 	height: 100%;
 }

@@ -7,68 +7,78 @@
 
 
 & {
-    // background-image: url('../images/Component/PhonePortrait.png');
-    // background-size: 100%;
-    // opacity: 1;
-    // width: px(640);
-    // height: px(1138);
-    // position: absolute;
-    // top: 0;
-    // left: 0;
-    a {
-        text-decoration: none;
-        font-family: 'Montserrat';
-        color: rgba(255, 255, 255, .5);
-        font-size: px(19);
-    }
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	flex-direction: column;
+	justify-content: space-around;
+	box-sizing: border-box;
+	padding: px(200) 0 px(70) 0;
+  a {
+    text-decoration: none;
+    font-family: 'Montserrat';
+    color: rgba(255, 255, 255, .5);
+    font-size: px(19);
+  }
 	.logo {
 		display: block;
-		background-image: url('../images/Component/logo.png');
+		background: url('../images/Component/logo.png') no-repeat;
 		width: px(191);
 		height: px(206);
-		margin: px(215) auto px(270) auto;
+		margin: 0 auto;
+		padding-bottom: px(250);
+		box-sizing: border-box;
 		background-size: 100%;
 	}
 	[name="login"],
-    [name="password"],
-    button {
-        display: block;
-        width: px(554);
-        height: px(96);
-        margin: 0 auto px(25) auto;
-        -webkit-border-radius: px(47);
-        -moz-border-radius: px(47);
-        border-radius: px(47);
-        font-family: 'Montserrat';
-        font-size: px(21);
-        color: #fff;
-        background-color: rgba(255, 255, 255, .3);
-        border: 0;
-        box-sizing: border-box;
+  [name="password"],
+  button {
+    display: block;
+    width: px(554);
+    height: px(96);
+    margin: 0 auto px(25) auto;
+    -webkit-border-radius: px(47);
+    -moz-border-radius: px(47);
+    border-radius: px(47);
+    font-family: 'Montserrat';
+    font-size: px(21);
+    color: #fff;
+    background-color: rgba(255, 255, 255, .3);
+    border: 0;
+    box-sizing: border-box;
 	}
-    [name="login"],
-    [name="password"] {
-        padding-left: px(105);
-        background-image: url('../images/Component/icons.png');
-        background-repeat: no-repeat;
-        background-size: px(40) 160%;
+  [name="login"],
+  [name="password"] {
+    padding-left: px(105);
+    background-image: url('../images/Component/icons.png');
+    background-repeat: no-repeat;
+    background-size: px(40) 160%;
+  }
+  [name="login"] {
+    background-position: px(35) px(30);
+  }
+  [name="password"] {
+    background-position: px(35) px(-85);
+  }
+  button {
+    background-color: #f96332;
+    color: #fff;
+    opacity: 1;
+  }
+  footer {
+    width: px(554);
+    margin: 0 auto;
+    .account,
+    .help {
+        display: inline-block;
     }
-    [name="login"] {
-        background-position: px(35) px(30);
+    .account {
+        float: left;
     }
-    [name="password"] {
-        background-position: px(35) px(-85);
+    .help {
+        float: right;
     }
-    button {
-        background-color: #f96332;
-        color: #fff;
-        opacity: 1;
-    }
-    footer {
-        display: flex;
-        justify-content: space-between;
-        margin: px(43) px(43) 0 px(43);
-    }
+  }
 }
 
 &:before {
@@ -77,11 +87,11 @@
 	position: absolute;
 	top: 0;
 	left: 0;
+	width: 100%;
+	height: 100%;
 	z-index: -1;
 	background: url('../images/Component/phone-bg.png');
-	background-size: 100%;
-	width: px(640);
-	height: px(1138);
+	background-size: cover;
 	opacity: .3;
 }
 
@@ -97,6 +107,6 @@
 	background-image: -o-linear-gradient(bottom, #000, #ff6a3a);
 	background-image: -ms-linear-gradient(bottom, #000, #ff6a3a);
 	background-image: linear-gradient(to top, #000, #ff6a3a);
-	width: px(640);
-	height: px(1138);
+	width: 100%;
+	height: 100%;
 }
